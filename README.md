@@ -26,7 +26,7 @@ Agora, crie seu projeto com este comando:
 ```powershell
 flutter create nome_do_projeto
 ```
-Substitua `nome_do_projeto` pelo nome que você quiser (sem espaços, tipo `meu_app`).
+Substitua `nome_do_projeto` pelo nome que você quiser (sem espaços, tipo `ods').
 
 ### 4️⃣ **Entrar no projeto**
 Depois que o Flutter criar os arquivos, entre na pasta do projeto:
