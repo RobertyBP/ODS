@@ -13,6 +13,7 @@ class Register extends StatefulWidget {
 class _RegisterState extends State<Register> {
   final _formKey = GlobalKey<FormState>();
   String _senha = '';
+  String _nome = '';
   AuthService authService = AuthService();
 
   void _registrar() {
@@ -36,6 +37,11 @@ class _RegisterState extends State<Register> {
           key: _formKey,
           child: Column(
             children: [
+               TextFormField(
+                decoration: InputDecoration(labelText: "Nome completo"),
+                validator: (value) => value!.length >= 15 ? null : "Nome completo",
+                onSaved: (value) => _nome = value!,
+              ),
               Text("Email: ${widget.email}"),
               TextFormField(
                 decoration: InputDecoration(labelText: "Senha"),
